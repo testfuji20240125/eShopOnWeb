@@ -5,11 +5,11 @@ on: [push, workflow_dispatch]
 
 #Environment variables https://docs.github.com/en/actions/learn-github-actions/environment-variables
 env:
-  RESOURCE-GROUP: rg-az400-eshoponweb-tftest
-  LOCATION: japaneast
+  RESOURCE-GROUP: 'rg-az400-eshoponweb-tftest'
+  LOCATION: 'japaneast'
   TEMPLATE-FILE: .azure/bicep/webapp.bicep
-  SUBSCRIPTION-ID: 232c3973-3f5f-4d9f-b314-636a760f8fbf
-  WEBAPP-NAME: az400-webapp-eshoponwebtftest
+  SUBSCRIPTION-ID: '232c3973-3f5f-4d9f-b314-636a760f8fbf'
+  WEBAPP-NAME: 'az400-webapp-eshoponwebtftest'
 
 jobs:
   #Build, test and publish .net web project in repository
